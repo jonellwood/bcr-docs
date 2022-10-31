@@ -2,6 +2,9 @@
     
     import details from "../../images/details-print-button.png";
     import moreButtons from "../../images/details-approve-deny-button.png";
+    import buttonsCircles from "../../images/buttons-with-circles.png";
+    import updated from "../../images/request-status-updated.png";
+    import logs from "../../images/logs.png";
   </script>
   
   <div class='main'>
@@ -26,7 +29,7 @@
         </p>
         <p>
           As you can see in this example - this user can only enter and view or
-          print requests.
+          <a href="/printing">print</a> requests.
         </p>
       </div>
     </div>
@@ -38,13 +41,31 @@
           moved from "Horseshoes to Horsehats from within the Animal Center
           becuase she needs more cowbell??
         </p>
-        <p>
+        
+      </div>
+      <img src={moreButtons} alt="more button examples" width="80%" />
+    </div>
+    <hr>
+    <div>
+      <h3>Approving / Denying requests</h3>
+      <p>If your role involves approving or denying requests you will have buttons for each request to take action</p>
+      <figure>
+        <figcaption>
           The logged in user is a Finance Approver and has options to Print the
           request, apply a Finance Approved status or Finance Denied status to the
           request.
-        </p>
+        </figcaption>
+        <img src={buttonsCircles} alt="Two buttons with colorful circles around them" width="90%"/>
+      </figure>
+      <figure>
+        <img src={updated} alt="request card with Approved by Finance Status badge" />
+        <figcaption>After applying a decision you will be redirected back to the Requests Dashboard and you will see the status badge updated to reflect the action you just took </figcaption>
+      </figure>
+      <hr>
+      <div>
+        <p>The action will also be logged in the system logs and be reflected in the details view of the request as well.</p>
+        <img src={logs} alt="just some logs. Not the cool ones from trees but entries made into a logging system to keep track of events" width="100%"/>
       </div>
-      <img src={moreButtons} alt="more button examples" width="80%" />
     </div>
   </div>
   
@@ -63,6 +84,18 @@
     .main{
         margin: 30px;
         max-width: 1080px;
+    }
+    a{
+      text-decoration: none;
+      cursor: pointer;
+      /* color: #005677; */
+      color: #58c9e8;
+      font-weight: 400;
+
+    }
+    figure{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
     }
     
   </style>

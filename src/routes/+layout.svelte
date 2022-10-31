@@ -3,11 +3,11 @@
         <nav>
             <a href="/"><button>Home</button></a>
             <a href="/login"><button>Login</button></a>
-            <a href="/dashboard"><button>Dashboard</button></a>
-            <a href="/details"><button>Details</button></a>
+            <a href="/reports"><button>Dashboard</button></a>
+            <a href="/requests"><button>Requests </button></a>
             <a href="/newRequests"><button>New Requests</button></a>
+            <a href="/details"><button>Details</button></a>
             <a href="/printing"><button>Printing</button></a>
-            <a href="/reports"><button>Reports</button></a>
             <a href="/search"><button>Search</button></a>
             <a href="/comments"><button>Comments</button></a>
             <a href="/support"><button>Support</button></a>
